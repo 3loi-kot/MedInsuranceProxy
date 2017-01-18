@@ -12,7 +12,7 @@ import javax.persistence.*;
 public class EmplClinic {
  //код сотрудника
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Id", insertable = false)
     private int id;
     // Ф.И.О.

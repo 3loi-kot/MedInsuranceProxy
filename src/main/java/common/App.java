@@ -22,9 +22,16 @@ public class App {
         emplClinic.setLastnameName("Иванов");
         emplClinic.setMiddleName("Иванович");
         emplClinic.setClinic(clinic);
-
         session.save(emplClinic);
 
+
+
+        emplClinic = new EmplClinic();
+        emplClinic.setFirstName("Петр");
+        emplClinic.setLastnameName("Петров");
+        emplClinic.setMiddleName("Петрович");
+        emplClinic.setClinic(clinic);
+        session.save(emplClinic);
         session.getTransaction().commit();
     }
 }

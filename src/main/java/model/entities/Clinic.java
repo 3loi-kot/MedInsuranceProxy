@@ -12,7 +12,7 @@ public class Clinic {
 
     // id клиники
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO )
+    @GeneratedValue(strategy = GenerationType.IDENTITY )
     @Column(name = "Id", insertable = false)
     private int id;
 
