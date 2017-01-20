@@ -65,7 +65,13 @@ public class CaseOrder {
     }
     public String getPatName() {return this.patName;}
 
+    @Column(name = "Statud")
+    private OrderStatus status;
 
+    public void setStatus(OrderStatus status) {
+        this.status = status;
+    }
+    public OrderStatus getStatus() {return this.status;}
     //ответственный сотрудник клиники
 
     @ManyToOne
