@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class EmplCompany {
     //код сотрудника
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Id", insertable = false)
     private int id;
     // Ф.И.О.
@@ -36,7 +36,7 @@ public class EmplCompany {
     public String getMiddleName() {return middlename;}
 
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="CompanyId")
     private Company company;
     public Company getCompany() {

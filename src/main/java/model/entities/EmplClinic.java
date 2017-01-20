@@ -38,7 +38,7 @@ public class EmplClinic {
     public String getMiddleName() {return middlename;}
 
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="СlinicId")
     private Clinic clinic;
     public Clinic getClinic() {
