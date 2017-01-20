@@ -16,6 +16,7 @@
         <mapping class="model.entities.Company"/>
         <mapping class="model.entities.EmplClinic"/>
         <mapping class="model.entities.EmplCompany"/>
-        <!-- <mapping class="model.entities.Order"/> -->
+        <mapping class="model.entities.CaseOrder"/>
+        <mapping class="model.entities.CaseOrderLine"/>
     </session-factory>
 </hibernate-configuration>
